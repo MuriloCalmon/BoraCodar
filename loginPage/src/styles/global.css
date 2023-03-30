@@ -592,6 +592,34 @@ html {
   flex: 1 1 0%;
 }
 
+@keyframes divAnimation {
+  0% {
+    transform: translateY(-800px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-divAnimation {
+  animation: divAnimation 2s ease;
+}
+
+@keyframes imgAnimation {
+  0% {
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-imgAnimation {
+  animation: imgAnimation 2s ease;
+}
+
 .items-center {
   align-items: center;
 }
