@@ -40,9 +40,9 @@
     <tbody>
         <tr>
             <td>11 - LoginPage</td>
-            <td><a href="loginPage">Uma página de login</a></td>
+            <td align="center"><a href="loginPage" >Página de login</a></td>
             <td>22/03/23</td>
-            <td align="center" ><a href="loginPage"><img width="300px" src="login/.github/preview.jpg" /></a></td>
+            <td align="center" ><a href="loginPage"><img width="300px" src="loginPage/.github/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
