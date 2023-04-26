@@ -44,5 +44,11 @@
             <td>22/03/23</td>
             <td align="center" ><a href="loginPage"><img width="300px" src="loginPage/.github/preview.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>09 - currency converter</td>
+            <td align="center"><a href="conversor" >Conversor de moedas</a></td>
+            <td>08/03/23</td>
+            <td align="center" ><a href="conversor"><img width="300px" src="conversor/.github/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
