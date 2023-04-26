@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --text-color: #0f172a;
+    font-size: 62.5%;
+    
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+    color: var(--text-color);
+
+}
+
+main {
+    padding: 6.4rem 8rem;
+    background: #ffffff;
+    box-shadow: 0rem .4rem 3.2rem rgba(15, 23, 42, .15);
+    border-radius: 1.6rem;
+
+    display: grid;
+    gap: 6.4rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.converter .wrapper {
+    display: flex;
+    align-items: center;
+    
+    gap: 1.6rem;
+    
+    margin-top: 1.6rem;
+}
+
+.money-wrapper {
+    background-color: #ffffff;
+    outline: .1rem solid #94a3b8;
+
+    width: 27rem;
+    padding: 1.6rem;
+    border-radius: .8rem;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.money-wrapper:hover,
+.money-wrapper:has(:focus) {
+    outline: .25rem solid #7c3aed;
+}
+
+
+/*AMOUNT*/
+
+.amount {
+    width: 50%;
+    
+    line-height: 2.4rem;
+    font-size: 1.6;
+    border: 0;
+
+    color: var(--text-color);
+}
+
+.amount:focus {
+    outline: 0;
+}
+
+/*DROPDOWN*/
+.dropdown {
+    --bg-hover: #ede9fe;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 13rem;
+    height: 5.6rem;
+
+    overflow: hidden;
+
+}
+
+.dropdown:hover {
+    height: fit-content;
+    overflow: initial;
+}
+
+.dropdown ul {
+    list-style: none;
+
+    background-color: #ffffff;
+
+
+    box-shadow: 0px 4px 16px rgba(15, 23, 40, .15);
+    border-radius: 8px;
+
+    padding: 0;
+
+    width: 16rem;
+    max-height: 17rem;
+
+    margin-top: .8rem;
+
+    overflow-y: scroll;
+
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown li:hover {
+    background-color: var(--bg-hover);
+    cursor: pointer;
+}
+
+.dropdown li {
+    padding: 1.2rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.selected {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    padding: 1.6rem;
+
+    border-radius: 0 .8rem .8rem;
+}
+
+.selected::before {
+    content: "";
+    height: 2.4rem;
+    border-left: 1px solid #94a3b8;
+    position: absolute;
+    left: 0;
+}
+
+.selected::after {
+    content: "";
+    background: url('./assets/vector.svg') no-repeat center;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+}
+
+.selected:hover {
+    background-color: var(--bg-hover);
+    cursor: pointer;
+}
+
+.fi.fis {
+    font-size: 2.4;
+    border-radius: 50%;
+}
+
+/* EXCHANGE */
+
+.tooltip {
+    background-color: #ffffff;
+    box-shadow: 0 .4rem 1.6rem rgba(15, 23, 42, .15);
+    border-radius: .4rem;
+    padding: .8rem;
+}
+
+.chart-controls {
+    display: flex;
+    gap: 1.6rem;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: -2.2rem .8rem 0 4rem;
+}
+
+.chart-controls button {
+    background-color: transparent;
+    border: 0;
+
+    width: 4rem;
+    height: 2.4rem;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.chart-controls button.active,
+.chart-controls button:hover {
+    background-color: #7c3aed;
+    color: #fff;
+}
+
+/* MEDIA */
+@media (max-width: 48rem) {
+    main {
+        padding: 1.6rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .converter .wrapper {
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .money-wrapper {
+        width: 100%;
+    }
+}
