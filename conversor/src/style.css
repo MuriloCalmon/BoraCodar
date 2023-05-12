@@ -215,6 +215,20 @@ section h2 {
     color: #fff;
 }
 
+.div-button {
+    text-align: center;
+}
+
+.btn-convert {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background-color: #7c3aed;
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* MEDIA */
 @media (max-width: 48rem) {
     main {
